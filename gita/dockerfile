@@ -13,7 +13,8 @@ RUN python -m pip install --upgrade pip && \
 
 # Copy the actual project code
 COPY . .
-
+ENV PYTHONPATH=/app/src
 # Default command (optional)
 # This just starts Python REPL if someone runs the container
+
 CMD ["python"]
